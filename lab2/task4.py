@@ -9,8 +9,8 @@ for i in range(1, 4):
 
     font = ImageFont.load_default(40)
 
-    text_position = (width // 2, height // 2)
+    textPos = (width // 2, height // 2)
 
-    draw.text(text_position, str(i), anchor="mm", font=font, fill='red')
+    draw.text(textPos, str(i), anchor="mm", font=font, fill='red')
     img.show()
     img.save(f"images/{i}.png", format="png")
