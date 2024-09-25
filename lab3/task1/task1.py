@@ -58,13 +58,6 @@ def main():
         print("You should enter a path to you directory!")
     mode = menu()
 
-  #  for img in path.iterdir():
-
-      #  a = io.imread(img)
-     #   b = transformations(a,6)
-
-    #    io.imsave('7.jpg', (b * 255).astype(np.uint8))
-
     for dir in path.iterdir():
         pictures = io.imread_collection(f"{dir}/*.jpg")
         num = len(pictures)
@@ -75,9 +68,5 @@ def main():
                 num+=1
 
     print("Success")
-
-
-
-
 
 main()
